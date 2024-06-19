@@ -1,8 +1,8 @@
 {
   "name": "pwatest",
   "short_name": "pwatest",
-  "id": "./",
-  "start_url": "./",
+  "id": "/pwatest/",
+  "start_url": "/pwatest/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#03173d",
