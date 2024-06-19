@@ -30,7 +30,13 @@
         <a class="dismiss">🗙</a>
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
+    <!-- For Github Pages, you'll have to use an absolute path! otherwise offline mode won't work properly -->
+    <script>
+        if (navigator.serviceWorker) {
+            navigator.serviceWorker.register('/pwatest/service-worker.js', {scope: '/pwatest/'})
+        }
+        
+    </script>
 </body>
 
 </html>
